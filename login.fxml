@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="545.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goooey.FXMLDocumentController">
+  <children>
+    <AnchorPane id="anchorPane2" prefHeight="300.0" prefWidth="500.0" styleClass="top-segment" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox id="VBox" alignment="CENTER" prefHeight="300.0" prefWidth="421.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+          <children>
+          <ImageView id="app-login-logo" fitHeight="73.0" fitWidth="81.0">
+            <image>
+              <Image preserveRatio="true" smooth="true" url="@logo.png" />
+            </image>
+          </ImageView>
+                  <Label text="Initialise fields" />
+            <AnchorPane id="AnchorPane" prefHeight="315.0" prefWidth="473.0">
+              <children>
+                <Label id="label" layoutX="13.0" layoutY="6.0" text="File Number" />
+                <TextField id="F_T1" fx:id="FilesTest1" layoutX="6.0" layoutY="22.0" prefHeight="31.0" prefWidth="102.0" />
+                <Label id="fileNumber" layoutX="9.0" layoutY="63.0" text="Neutral Agent" />
+                <TextField id="NA_T1" fx:id="NAgentsTest1" layoutX="6.0" layoutY="79.0" prefHeight="31.0" prefWidth="102.0" />
+                        <TextField id="PA_T1" fx:id="PAgentsTest1" layoutX="6.0" layoutY="198.0" prefHeight="31.0" prefWidth="102.0" />
+                        <TextField id="UA_T1" fx:id="UAgentsTest1" layoutX="6.0" layoutY="135.0" prefHeight="31.0" prefWidth="102.0" />
+                        <TextField id="DA_T1" fx:id="DAgentsTest1" layoutX="6.0" layoutY="253.0" prefHeight="31.0" prefWidth="102.0" />
+                        <Label id="label" layoutX="13.0" layoutY="117.0" text="Uploaders" />
+                        <Label id="label" layoutX="11.0" layoutY="237.0" text="Downloaders" />
+                        <Label id="label" layoutX="14.0" layoutY="180.0" text="Police" />
+                        <Label id="label" layoutX="394.0" layoutY="180.0" text="Police" />
+                        <Label id="label" layoutX="372.0" layoutY="229.0" text="Downloaders" />
+                        <Label id="label" layoutX="373.0" layoutY="113.0" text="Uploaders" />
+                        <Label id="label1" layoutX="361.0" layoutY="62.0" text="Neutral Agent" />
+                        <Label id="label" layoutX="365.0" layoutY="7.0" text="File Number" />
+                        <TextField id="F_T2" fx:id="FilesTest2" layoutX="362.0" layoutY="22.0" prefHeight="31.0" prefWidth="102.0" />
+                        <TextField id="NA_T2" fx:id="NAgentsTest2" layoutX="362.0" layoutY="79.0" prefHeight="31.0" prefWidth="102.0" />
+                        <TextField id="UA_T2" fx:id="UAgentsTest2" layoutX="362.0" layoutY="135.0" prefHeight="31.0" prefWidth="102.0" />
+                        <TextField id="PA_T2" fx:id="PAgentsTest2" layoutX="362.0" layoutY="198.0" prefHeight="31.0" prefWidth="102.0" />
+                        <TextField id="DA_T2" fx:id="DAgentsTest2" layoutX="362.0" layoutY="245.0" prefHeight="31.0" prefWidth="102.0" />
+              </children>
+            </AnchorPane>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <Button id="label" fx:id="loginButton" defaultButton="true" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="70.0" prefWidth="400.0" text="Submit" AnchorPane.bottomAnchor="66.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" />
+    <HBox id="hBox1" alignment="CENTER" prefHeight="25.0" prefWidth="418.0" AnchorPane.bottomAnchor="156.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0">
+<!--      <children>
+        <Label id="1 fx:id="errorMessage" />
+      </children>-->
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@logoLoginCSS.css" />
+  </stylesheets>
+</AnchorPane>

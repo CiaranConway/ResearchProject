@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ * Copyright (c) 2008, 2012 Oracle and/or its affiliates.
+ * All rights reserved. Use is subject to license terms.
+ *
+ * This file is available and licensed under the following license:
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ *  - Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *  - Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the distribution.
+ *  - Neither the name of Oracle Corporation nor the names of its
+ *    contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="Profile" minWidth="500.0" prefHeight="659.0" prefWidth="759.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8"  fx:controller="goooey.FXMLDocumentController">
+  <children>
+    <AnchorPane id="anchorPane1" layoutX="8.0" prefHeight="531.0" prefWidth="725.0" styleClass="top-segment" AnchorPane.bottomAnchor="128.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <SplitPane dividerPositions="0.29797979797979796" layoutX="-1.0" layoutY="-3.0" prefHeight="531.0" prefWidth="725.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="192.0">
+                     <children>
+                        <TextArea layoutX="6.0" layoutY="-16.0" prefHeight="529.0" prefWidth="212.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Label layoutX="59.0" layoutY="14.0" text="Agent Messages" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane>
+                     <children>
+                        <StackedAreaChart id="graph" layoutX="-41.0" layoutY="7.0" prefHeight="529.0" prefWidth="505.0" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="7.0">
+                          <xAxis>
+                            <NumberAxis label="Time (In seconds)" side="BOTTOM" lowerBound="0" upperBound="100" tickUnit="10"/>
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="Agents" side="LEFT" lowerBound="0" upperBound="200" tickUnit="10"/>
+                          </yAxis>
+                        </StackedAreaChart>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+    </AnchorPane>
+    <HBox id="HBox" alignment="CENTER" prefHeight="0.0" prefWidth="679.0" spacing="20.0" AnchorPane.bottomAnchor="42.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" />
+      <Button fx:id="loginButton2" layoutX="247.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="51.0" prefWidth="232.0" text="View Results" />
+  </children>
+  <stylesheets>
+    <URL value="@../NetBeansProjects/FXML-LoginDemo/src/demo/Login.css" />
+  </stylesheets>
+</AnchorPane>
